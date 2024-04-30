@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-devgenops-component
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/adr-location: docs/adrs
+    github.com/project-slug: shiftdp/my-devgenops-component
+  links:
+    - url: 'https://google.com'
+      title: 'my-devgenops-component Link'
+      # icon: ''
+      # type: ''
+spec:
+  system: system:default/my-new-application
+  type: service
+  owner: group:default/my-new-team
+  lifecycle: experimental
+  project: goreply-playground-idp
